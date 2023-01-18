@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <h1><u>Function</u></h1>
+    <h2>Create one function with zero parameter having a console statement;</h2>
+    <pre>
+        function display(){
+            console.log("Hello!");
+        }
+        display();
+    </pre>
+    <hr>
+    <h2>Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h2>
+    <pre>
+        function sum(a,b){
+            console.log("Sum of"+ a+","+ b+ "is"+(a+b));
+        }
+        sum(3,4);
+    </pre>
+    <hr>
+    <h2>Create one arrow function</h2>
+    <pre>
+        hello = () => {
+            console.log ("Hello World!");
+          }
+          hello();
+    </pre>
+    <hr>
+    <h2><pre>"Print output: 
+        var x = 21;
+        var girl = function () {
+            console.log(x);
+            var x = 20;
+        };
+        girl ();"</pre></h2>
+        <pre>
+Undefined.
+        </pre>
+        <hr>
+        <h2><pre>"Print output: 
+            var x = 21;
+            girl ();
+            console.log(x)
+            function girl() {
+                console.log(x);
+                var x = 20;
+            };
+            "</pre></h2>
+        <pre>
+Undefined<br>21
+        </pre>
+        <hr>
+        <h2><pre>"Print output
+
+            var x = 21;
+            a();
+            b();
+            
+              function a() {
+                
+               x = 20;
+              console.log(x);
+            };
+             function b() {
+                
+                x = 40;
+               console.log(x);
+            };"</pre></h2>
+            <pre>
+               20<br>40 
+            </pre>
+            <hr>
+            <h2>Write a function that accepts parameter n and returns factorial of n</h2>
+            Using while loop:
+            <pre>
+                function factorial(n){
+                    let answer = 1;
+                    let i=1;
+                  while(i<=n){
+                    answer=i*answer;
+                    i++;
+                  }
+                  console.log(answer);
+                }
+                factorial();
+            </pre>
+            Using for loop:
+            <pre>
+                function factorial(n){
+                    let answer = 1;
+                    let i=1;
+                  for(let i=0;i <= n;i++){
+                    answer=i*answer;
+                  }
+                  console.log(answer);
+                }
+                factorial();
+            </pre>
+</body>
+</html>
